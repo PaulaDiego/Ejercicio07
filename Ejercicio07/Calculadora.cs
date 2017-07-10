@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ejercicio07
 {
-    public class Class1
+    public class Calculadora
     {
+        public static int Sumar(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
