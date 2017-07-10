@@ -11,9 +11,26 @@ namespace Ejercicio10Test
         public void TestSumarGuardando()
         {
             CalculadoraConFichero sut = new CalculadoraConFichero();
-
+            sut.Calculadora = new CalculadoraDel9();
             sut.SumarGuardando(4, 5);
         }
 
     }
+
+    public class CalculadoraDel9 : ICalculadora
+    {
+        public int Sumar(int a, int b)
+        {
+            return 9;
+        }
+    }
+
+    public class FicheroServiceDeMentira : IFicheroService
+    {
+        public void GuardaNumero(int c)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 }

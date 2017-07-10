@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ejercicio07
 {
-    public class FicheroService
+    public class FicheroService : IFicheroService
     {
-        public static void GuardaNumero(int c)
+        public void GuardaNumero(int c)
         {
             FicheroUtil FicheroUtil = new FicheroUtil();
             FicheroUtil.AlmacenarDatos(c, "miFichero.txt");

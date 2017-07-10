@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ejercicio07
 {
-    public class Calculadora
+    public class Calculadora : ICalculadora
     {
-        public static int Sumar(int a, int b)
+        public int Sumar(int a, int b)
         {
             return a + b;
         }
